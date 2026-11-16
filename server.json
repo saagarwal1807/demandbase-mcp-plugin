@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Demandbase/demandbase-mcp",
+  "title": "Demandbase",
+  "description": "Official Demandbase MCP server. Query accounts, people, intent, and B2B company intelligence.",
+  "version": "1.0.0",
+  "websiteUrl": "https://developer.demandbase.com/docs/mcp",
+  "repository": {
+    "url": "https://github.com/Demandbase/demandbase-mcp-plugin",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.demandbase.com/mcp/servers/db-mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OAuth 2.0 Bearer access token (format: Bearer <token>). See https://gateway.demandbase.com/.well-known/oauth-protected-resource and /.well-known/oauth-authorization-server for discovery.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

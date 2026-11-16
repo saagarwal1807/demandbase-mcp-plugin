@@ -1,0 +1,18 @@
+{
+  "name": "demandbase-plugin-marketplace",
+  "owner": {
+    "name": "Demandbase",
+    "url": "https://www.demandbase.com"
+  },
+  "metadata": {
+    "description": "Official Demandbase plugin marketplace for Claude"
+  },
+  "plugins": [
+    {
+      "name": "demandbase",
+      "description": "Ask questions about your Demandbase accounts, people, intent, and buying groups — one-click Demandbase MCP server integration.",
+      "source": "./",
+      "homepage": "https://developer.demandbase.com/docs/mcp"
+    }
+  ]
+}
