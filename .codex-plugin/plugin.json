@@ -1,0 +1,44 @@
+{
+  "name": "demandbase",
+  "version": "1.0.0",
+  "description": "Connect AI agents to Demandbase: ask natural-language questions about your accounts, people, opportunities, engagement, intent, and buying groups, plus Demandbase's global B2B intelligence (firmographics, technographics, corporate hierarchy, news). Read-only and respects your existing Demandbase permissions. The account intelligence layer for Codex and any MCP-compatible agent.",
+  "author": {
+    "name": "Demandbase",
+    "url": "https://www.demandbase.com"
+  },
+  "homepage": "https://developer.demandbase.com/docs/mcp",
+  "repository": "https://github.com/Demandbase/demandbase-mcp-plugin",
+  "keywords": [
+    "demandbase",
+    "abm",
+    "account-based marketing",
+    "b2b",
+    "sales intelligence",
+    "intent data",
+    "buying groups",
+    "firmographics",
+    "technographics",
+    "account research",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Demandbase",
+    "shortDescription": "Account intelligence for AI agents: ask about your accounts, people, intent, and buying groups in Demandbase.",
+    "longDescription": "Demandbase MCP gives AI agents read-only access to your Demandbase tenant and Demandbase's global B2B intelligence. Ask natural-language questions about accounts, people, opportunities, engagement, intent, and buying-group coverage, and look up firmographics, technographics, corporate hierarchy, news, and employment information. Access is authenticated through your Demandbase sign-in (OAuth) and respects your existing Demandbase permissions. Use cases: account research, account-based marketing, pipeline review, intent-driven prioritization, buying-group analysis, and meeting prep.",
+    "developerName": "Demandbase",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read"
+    ],
+    "websiteURL": "https://www.demandbase.com",
+    "privacyPolicyURL": "https://www.demandbase.com/privacy/",
+    "termsOfServiceURL": "https://www.demandbase.com/terms-of-use/",
+    "defaultPrompt": [
+      "Which of my accounts are showing the highest intent this month?",
+      "Summarize engagement and buying-group coverage for Acme Corp.",
+      "Show me the tech stack and corporate hierarchy for Snowflake."
+    ]
+  }
+}

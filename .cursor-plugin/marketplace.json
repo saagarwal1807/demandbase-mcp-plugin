@@ -1,0 +1,16 @@
+{
+  "name": "demandbase-plugin-marketplace",
+  "owner": {
+    "name": "Demandbase"
+  },
+  "metadata": {
+    "description": "Official Demandbase plugin marketplace for Cursor"
+  },
+  "plugins": [
+    {
+      "name": "demandbase",
+      "source": "./",
+      "description": "Ask questions about your Demandbase accounts, people, intent, and buying groups — one-click Demandbase MCP server integration for Cursor."
+    }
+  ]
+}

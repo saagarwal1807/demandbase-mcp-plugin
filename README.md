@@ -8,6 +8,18 @@ Use [Demandbase](https://www.demandbase.com) account intelligence from LLM clien
 - Look up Demandbase's global B2B intelligence: firmographics, technographics, corporate hierarchy, news, and employment information
 - Read-only access that respects your existing Demandbase permissions
 
+## Supported Clients
+
+| Client | Manifest |
+|---|---|
+| Claude Code | `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json` |
+| Cursor | `.cursor-plugin/plugin.json`, `.cursor-plugin/marketplace.json` |
+| OpenAI Codex | `.codex-plugin/plugin.json` |
+| Gemini CLI | `.gemini-plugin/plugin.json` |
+| Any MCP client | `.mcp.json` |
+
+All manifests point to the same `.mcp.json`. When releasing, keep `version` in sync across every `plugin.json`.
+
 ## Prerequisites
 
 - An LLM client that supports remote MCP servers
@@ -48,6 +60,13 @@ curl -s "https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.
 .claude-plugin/
   plugin.json
   marketplace.json
+.codex-plugin/
+  plugin.json
+.cursor-plugin/
+  plugin.json
+  marketplace.json
+.gemini-plugin/
+  plugin.json
 .github/workflows/
   publish-mcp-registry.yml
 .mcp.json            # MCP server registration (all clients)

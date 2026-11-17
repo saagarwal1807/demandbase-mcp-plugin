@@ -1,0 +1,26 @@
+{
+  "name": "demandbase",
+  "displayName": "Demandbase",
+  "version": "1.0.0",
+  "description": "Connect AI agents to Demandbase: ask natural-language questions about your accounts, people, opportunities, engagement, intent, and buying groups, plus Demandbase's global B2B intelligence (firmographics, technographics, corporate hierarchy, news). Read-only and respects your existing Demandbase permissions. The account intelligence layer for Gemini and any MCP-compatible agent.",
+  "author": {
+    "name": "Demandbase",
+    "url": "https://www.demandbase.com"
+  },
+  "repository": "https://github.com/Demandbase/demandbase-mcp-plugin",
+  "homepage": "https://developer.demandbase.com/docs/mcp",
+  "keywords": [
+    "demandbase",
+    "abm",
+    "account-based marketing",
+    "b2b",
+    "sales intelligence",
+    "intent data",
+    "buying groups",
+    "firmographics",
+    "technographics",
+    "account research",
+    "mcp"
+  ],
+  "mcpServers": "./.mcp.json"
+}
